@@ -1,0 +1,42 @@
+* Generalization helps commonalize objects in design rather than being specific
+
+* Generalize without Inheritance - Interfaces
+
+* Collections can simply be also understood as - BUCKET
+
+* A List of Strings - good idea for a collections
+
+* A List of everything - not good
+
+* Objects , primitives - two types while trying to store as collections
+
+* Interfaces in Java - Generalizations  (List)
+
+* Implementation - How it does it ?  (ArrayList,LinkedList)
+
+* Collection Interface
+
+(i.) Some collections allow duplicate elements some don't .
+(ii.) Some are ordered and some other are unordered .
+(iii.) Some collections prohibit adding nulls .
+
+JDK does not provide any direct implementation of collection interface .
+
+* Collection should provide two standard contructors :
+
+(i.) void constructor
+(ii.) Single argument having that collection as an argument itself.
+
+Collections provide methods
+(i.) To mutate collections
+(ii.) Immutable - Collection.unmodifiableCollection() throws UnsupportedOperationException
+(iii.) Items in collections are not immutable .
+
+List - Ordered (Insertion)
+
+Set - UnOrdered , No duplicate entries
+
+
+
+Collection  -------------------------> java.lang.iterable Interface (Provide a way to iterate over collections, Iterator)
+Iterator has 2 main methods - hasNext() ? and next() .
