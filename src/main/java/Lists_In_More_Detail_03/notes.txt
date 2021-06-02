@@ -1,0 +1,17 @@
+List general methods
+
+get(index)
+
+add(value)
+
+set(index,value)
+
+remove(index)
+
+remove(value)
+
+subList(startIndex,endIndex)
+
+indexOf()
+
+lastIndexOf()
