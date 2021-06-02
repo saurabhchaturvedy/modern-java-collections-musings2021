@@ -3,3 +3,7 @@ The iterators returned by this class's iterator and listIterator methods are fai
 
 
 Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. Fail-fast iterators throw ConcurrentModificationException on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness: the fail-fast behavior of iterators should be used only to detect bugs.
+
+ListIterator can traverse forward and backward .
+
+ListIterator cannot be used in a forEach loop.
