@@ -27,3 +27,61 @@ IS A relationship only works in one direction . (Liskov Substitution Principle)
 
 TruckTire is a Tire
 A Tire is not a TruckTire
+
+
+java.lang.Comparable interface provides natural ordering (Order coded into some objects itself)
+
+Lists from Java 8 has sort() method
+
+passing sort as null for elements that have natural ordering , elements gets sorted
+
+int compareTo(T o)
+
+this.compareTo(that)  (by default ascending order, swap values for comparisons to get descending values)
+
+this comes before that -ve
+this comes after that +ve
+this at same position as that 0
+
+
+
+java.util.Comparator interface is used to create multiple order implementations , which can be passed in object's sort method to work .
+
+Hashing - pertains to ordering for better searching of elements across collection of objects .
+
+Ordering of unrelated items - done using Hashing , provided sometimes totally different items may land up in exact same position .
+
+Hashcode - unique number representative of an objects , which can create ordering which works for searching even among unrelated things .
+Number must be reliable and repeatable for the sake of consistency .
+
+Hashcodes can be same for two different objects .
+
+Two different hashcodes might try to store the data in same bucket . (Collision which can be solved by added entry in a Linked data structure)
+
+Hashing storage resize based on Load Factor
+
+
+Rules for implementing Hash Codes
+
+
+1. If two objects are equals , then they must return same hshcode values
+
+2. Hashcode of an object must not be altered by any field or change that doesn't also alter equality .
+
+3. If in a class with fields A,B,C,D,E only fields A,B,C are used in calculation of equality , then its a bad error if we use fields D and E in the computation
+   of hashCode() .
+
+4. Although calculation of hashCode() does not mandatory needs to consider all fields used in calculation of equality .
+
+5. Goal of hashing is to speed up mechanism of searching algorithm
+
+time saved in making the search quicker > time spent in calculating the hashcode
+
+Fields with larger range of values are much better for calculating hashcode , as they provide more variations
+
+6. If you override equals() , then we must also override hashCode() method to maintain the contract that , two equal objects must have equal hashCodes .
+
+Because , the equals method exists because , someone wants to search something , and that can only be correctly possible with combination of both .
+
+Equals - comparison
+hashCode - search
