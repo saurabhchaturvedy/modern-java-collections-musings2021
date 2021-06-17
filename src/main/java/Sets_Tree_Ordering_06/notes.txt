@@ -1,0 +1,44 @@
+List allow duplicates
+List has insertion order of elements
+
+Set reject duplicates
+
+Set insertion is by policy , no predictable order
+
+Adding/removing element based on capacity of set may still change the order (Hashing)
+
+Hashset contains() - hashing (equals() and hashCode())
+
+TreeSet - binary tree - inorder
+
+Tree cannot store equal elements
+As root has lower and greater left and right elements
+
+Treeset can directly use elements which have a natural ordering
+
+Or Treeset can take a comparator as a parameter new TreeSet(new Comparator())
+
+Different objects with same position cannot be stored in a tree set
+
+Rules for a tree-set
+
+same position inOrder must mean same object
+
+Equals objects must have same positioning in order
+
+TreeSet does not calls equals()
+
+Elements must be mutually compatible types
+
+
+While using TreeSet we must ensure that :
+
+Ordering and Equality tests are consistent
+
+Any changes in tree set objects should not change the ordering position
+
+Comparator use - when we don't own the source code (3rd party library code)
+
+
+
+

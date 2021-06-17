@@ -71,4 +71,17 @@ Rules for implementing Hash Codes
 3. If in a class with fields A,B,C,D,E only fields A,B,C are used in calculation of equality , then its a bad error if we use fields D and E in the computation
    of hashCode() .
 
-4. Although caclculation of hashCode() does not mandato
+4. Although calculation of hashCode() does not mandatory needs to consider all fields used in calculation of equality .
+
+5. Goal of hashing is to speed up mechanism of searching algorithm
+
+time saved in making the search quicker > time spent in calculating the hashcode
+
+Fields with larger range of values are much better for calculating hashcode , as they provide more variations
+
+6. If you override equals() , then we must also override hashCode() method to maintain the contract that , two equal objects must have equal hashCodes .
+
+Because , the equals method exists because , someone wants to search something , and that can only be correctly possible with combination of both .
+
+Equals - comparison
+hashCode - search
