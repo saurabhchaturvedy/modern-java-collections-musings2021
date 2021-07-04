@@ -1,7 +1,0 @@
-
-
-inner classes -> instance inner classes
-
-nested classes -> static/inner classes as a whole
-
-Iterator class should be private and non-static

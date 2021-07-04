@@ -1,7 +1,0 @@
-
-
-Two constructors cannot take exactly identical sequences of same type of arguments ,
-
-But factory design allows this
-
-Comparators might contain state though quite rare
