@@ -1,0 +1,7 @@
+
+== Generics add compile time checks to ensure only a certain kind of objects are added to a particular bucket of objects .
+
+Java 7 allowed diamond operator syntax on RHS
+
+* In Generics Source code knows about the type checks , but the runtime does not , this is known as Type Erasure .
+

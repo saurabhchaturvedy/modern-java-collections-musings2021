@@ -1,0 +1,22 @@
+List general methods
+
+get(index)
+
+add(value)
+
+set(index,value)
+
+remove(index)
+
+remove(value)
+
+subList(startIndex,endIndex)
+
+indexOf()
+
+lastIndexOf()
+
+
+Inserts, Insert At First - LinkedList (Doubly Linked) , Get - ArrayLists
+
+Always code to the most general generalization (Interfaces)
