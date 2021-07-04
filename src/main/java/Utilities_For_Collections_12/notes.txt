@@ -1,0 +1,45 @@
+
+
+java.util.Arrays class
+======================
+
+Collections.binarySearch()
+
+Collections.copy() - duplicate list
+
+Collections.replaceAll()
+
+Collections.unmodifiableCollection()
+
+Collections.synchronizedCollection()
+
+
+While putting an incorrect type value in a Collection list of generic type , a ClassCastException is thrown
+
+Collections.checkedList()  // tells you exactly where error occurred in cast
+
+Collections.emptyMap()
+
+Collections.singleton()
+
+Objects.equals(Object a , Object b)
+
+Objects.hashCode(Object o);
+
+
+Objects.hash(x,y,z)
+
+Objects.compare()
+
+Java 9 Collections features
+==============================
+
+List<> Collections.of(x1,x,2...)
+
+
+Collections.map(K,V var-args)
+
+
+
+
+
